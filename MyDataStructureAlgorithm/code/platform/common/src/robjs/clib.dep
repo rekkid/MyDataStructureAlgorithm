@@ -1,0 +1,3 @@
+robjs/clib.o robjs/clib.dep robjs/clib.chk: clib.c \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/clib.h \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/primitive.h

@@ -1,0 +1,4 @@
+robjs/dllht.o robjs/dllht.dep robjs/dllht.chk: dllht.c \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/dllht.h \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/primitive.h \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/dll.h

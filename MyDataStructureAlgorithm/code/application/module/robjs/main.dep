@@ -1,0 +1,3 @@
+robjs/main.o robjs/main.dep robjs/main.chk: main.c \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/module.h \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/error.h

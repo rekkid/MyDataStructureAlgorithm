@@ -1,0 +1,4 @@
+robjs/fifo.o robjs/fifo.dep robjs/fifo.chk: fifo.c \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/fifo.h \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/primitive.h \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/clib.h

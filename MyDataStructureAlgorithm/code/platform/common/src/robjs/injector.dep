@@ -1,0 +1,4 @@
+robjs/injector.o robjs/injector.dep robjs/injector.chk: injector.c \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/error.h \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/injector.h \
+ /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/error.h
