@@ -1,1 +1,0 @@
-robjs/list.o robjs/list.dep robjs/list.chk: list.c

@@ -1,3 +1,0 @@
-robjs/alignment.o robjs/alignment.dep robjs/alignment.chk: alignment.c \
- /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/alignment.h \
- /cygdrive/g/Work/Eclipse_CDT_workspace/MyDataStructureAlgorithm/code/platform/common/inc/primitive.h
