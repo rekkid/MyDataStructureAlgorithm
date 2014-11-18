@@ -1,7 +1,7 @@
 /*
  * list.h
  *
- *  Created on: 2014��10��26��
+ *  Created on: 2014-10-26
  *      Author: ZJ
  */
 
