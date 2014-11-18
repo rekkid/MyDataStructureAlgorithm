@@ -57,7 +57,7 @@ ifeq ("$(MAKECMDGOALS)", "unitest")
 DIR_OBJS = uobjs
 AR = ar
 CC = gcc
-CFLAGS += -Werror -gdwarf-2 -g3 -DUNITEST -fprofile-arcs -ftest-coverage
+CFLAGS +=  -gdwarf-2 -g3 -DUNITEST -fprofile-arcs -ftest-coverage
 LINK_LIBS += gcov
 endif
 
