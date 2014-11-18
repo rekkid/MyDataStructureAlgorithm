@@ -33,6 +33,7 @@ COMMON_DIRS = \
     
 NONUT_DIRS = \
     $(ROOT)/code/application/module \
+    $(ROOT)/code/application/cpurate \
 
     
 UT_DIRS = \
