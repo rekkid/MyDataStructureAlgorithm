@@ -9,7 +9,7 @@
 
 #include "list.h"
 #include "stack.h"
-
+//
 /* stack_push */
 int stack_push(Stack *stack, const void *data) {
 	/* Push the data onto the stack. */
