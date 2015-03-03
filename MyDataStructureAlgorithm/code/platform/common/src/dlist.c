@@ -27,12 +27,11 @@ void dlist_destroy(DList *list) {
 	/* Remove each element. */
 	while (dlist_size(list) > 0) {
 		if (dlist_remove(list, dlist_tail(list), (void **)&data) == 0
-				&& list->destroy != NULL) {
+			&& list->destroy != NULL) {
 			/* Call a user-defined function to freee dynamically allocated data. */
 			list->destroy(data);
 		}
 	}
-
 	/* No operation are allowed now, but clear the structure as a precaution. */
 	memset(list, 0, sizeof(DList));
 }
@@ -49,7 +48,7 @@ int dlist_ins_next(DList *list, DListElmt *element, const void *data) {
 	if ((new_element = (DListElmt *)malloc(sizeof(DListElmt))) == NULL)
 		return -1;
 
-	/* Insert the new element to the list. */
+	/* Insert the new element into the list. */
 	new_element->data = (void *)data;
 
 	if (dlist_size(list) == 0) {
@@ -81,7 +80,7 @@ int dlist_ins_prev(DList *list, DListElmt *element, const void *data) {
 	DListElmt *new_element;
 
 	/* Do not allow a NULL element unless the list is empty. */
-	if (element == NULL && dlist_size(list) == 0)
+	if (element == NULL && dlist_size(list) != 0)
 		return -1;
 
 	/* Allocate storage to be managed by the abstract datatype. */
@@ -95,6 +94,7 @@ int dlist_ins_prev(DList *list, DListElmt *element, const void *data) {
 		list->head = new_element;
 		list->head->next = NULL;
 		list->head->prev = NULL;
+
 		list->tail = new_element;
 	} else {
 		/* Handle insertion when the list is not empty. */
@@ -117,6 +117,7 @@ int dlist_ins_prev(DList *list, DListElmt *element, const void *data) {
 /* dlist_remove */
 int dlist_remove(DList *list, DListElmt *element, void **data) {
 	/* Do not allow a NULL element or removal from an empty list. */
+
 	if (element == NULL || dlist_size(list) == 0)
 		return -1;
 
