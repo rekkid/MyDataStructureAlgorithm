@@ -6,7 +6,7 @@
  */
 
 #include "list.h"
-#include "traverse.h"
+#include "bitree.h"
 
 /* preorder */
 int preorder(const BiTreeNode *node, List *list) {
