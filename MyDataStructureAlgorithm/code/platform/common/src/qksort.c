@@ -1,7 +1,7 @@
 /*
  * qksort.c
  *
- *  Created on: 2015Äê3ÔÂ6ÈÕ
+ *  Created on: 2015ï¿½ï¿½3ï¿½ï¿½6ï¿½ï¿½
  *      Author: ZJ
  */
 
@@ -75,6 +75,27 @@ static int partition(void *data, int esize, int i, int k, int (*compare)
 	free(pval);
 	free(temp);
 
-	/* Return the pasition dividing the two partitions. */
+	/* Return the partition dividing the two partitions. */
 	return k;
+}
+
+/* qksort */
+int qksort(void *data, int size, int esize, int i, int k, int (*compare)
+		(const void *key1, const void *key2)) {
+	int j;
+
+	/* Stop the recursion when it is not possible to partition further. */
+	while (i < k) {
+		/* Determine where to partition the elements. */
+		if ((j = partition(data, esize, i, k, compare)) < 0)
+			return -1;
+
+		/* Recursively sort the left partition. */
+		if (qksort(data, size, esize, i, j, compare) < 0)
+			return -1;
+
+		/* Iterate and sort the right partition. */
+		i = j + 1;
+	}
+	return 0;
 }
