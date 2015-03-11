@@ -154,7 +154,7 @@ int graph_rem_vertex(Graph *graph, void **data) {
 }
 
 /* graph_rem_edge */
-int graph_rem_edge(Graph *graph, void *data1, void *data2) {
+int graph_rem_edge(Graph *graph, void *data1, void **data2) {
 	ListElmt *element;
 
 	/* Locate the adjacency list for the first vertex. */

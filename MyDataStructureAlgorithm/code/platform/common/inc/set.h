@@ -1,7 +1,7 @@
 /*
  * set.h
  *
- *  Created on: 2015Äê2ÔÂ26ÈÕ
+ *  Created on: 2015ï¿½ï¿½2ï¿½ï¿½26ï¿½ï¿½
  *      Author: ZJ
  */
 
@@ -21,7 +21,7 @@ void set_init(Set *set, int (*match)(const void *key1, const void *key2),
 		void (*destroy)(void *data));
 #define set_destroy list_destroy
 int set_insert(Set *set, const void *data);
-int set_remove(Set *set, const void **data);
+int set_remove(Set *set, void **data);
 int set_union(Set *setu, const Set *set1, const Set *set2);
 int set_intersection(Set *seti, const Set *set1, const Set *set2);
 int set_difference(Set *setd, const Set *set1, const Set *set2);

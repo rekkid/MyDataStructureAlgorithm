@@ -34,7 +34,7 @@ COMMON_DIRS = \
 NONUT_DIRS = \
     $(ROOT)/code/application/module \
     $(ROOT)/code/application/cpurate \
-
+	$(ROOT)/code/application/list
     
 UT_DIRS = \
     $(ROOT)/tests/platform/common \

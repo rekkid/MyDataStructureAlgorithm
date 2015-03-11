@@ -1,7 +1,7 @@
 /*
  * set.c
  *
- *  Created on: 2015Äê2ÔÂ26ÈÕ
+ *  Created on: 2015ï¿½ï¿½2ï¿½ï¿½26ï¿½ï¿½
  *      Author: ZJ
  */
 
@@ -161,5 +161,6 @@ int set_is_equal(const Set *set1, const Set *set2) {
 		return 0;
 
 	/* Sets of the same size are equal if they are subsets. */
-	return set_is_subset(set1, set2);
+	int retval = set_is_subset(set1, set2);
+	return retval;
 }

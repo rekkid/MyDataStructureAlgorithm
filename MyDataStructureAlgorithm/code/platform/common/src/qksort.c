@@ -11,7 +11,7 @@
 #include "sort.h"
 
 /* compare_int */
-static int comapre_int(const void *int1, const void *int2) {
+static int compare_int(const void *int1, const void *int2) {
 	/* Compare two integers (used during median-of-three partitioning). */
 	if (*(const int *)int1 > *(const int *)int2)
 		return 1;

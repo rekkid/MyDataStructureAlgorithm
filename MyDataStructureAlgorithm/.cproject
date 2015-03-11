@@ -45,7 +45,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="traverse.c|cpu_rate" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="traverse.c"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -94,7 +93,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="traverse.c|cpu_rate" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="traverse.c"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -143,7 +141,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="traverse.c|cpu_rate" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="traverse.c"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
