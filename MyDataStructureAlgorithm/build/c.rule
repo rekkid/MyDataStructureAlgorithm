@@ -50,7 +50,7 @@ ifeq ("$(MAKECMDGOALS)", "debug")
 DIR_OBJS = dobjs
 AR = ar
 CC = gcc
-CFLAGS +=  -gdwarf-2 -g3
+CFLAGS +=  -gdwarf-2 -g
 endif
 
 ifeq ("$(MAKECMDGOALS)", "unitest")

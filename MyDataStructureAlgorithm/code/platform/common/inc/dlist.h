@@ -38,7 +38,7 @@ int dlist_remove(DList *list, DListElmt *element, void **data);
 #define dlist_is_head(element) ((element)->prev == NULL ? 1 : 0)
 #define dlist_is_tail(element) ((element)->next == NULL ? 1 : 0)
 #define dlist_data(element) ((element)->data)
-#define dlist_next(element) ((elemnet)->next)
+#define dlist_next(element) ((element)->next)
 #define dlist_prev(element) ((element)->prev)
 
 #endif /* CODE_PLATFORM_COMMON_INC_DLIST_H_ */

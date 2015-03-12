@@ -72,10 +72,11 @@ int set_union(Set *setu, const Set *set1, const Set *set2) {
 			/* Do not allow the insertion of duplicates. */
 			continue;
 		} else {
-		data = list_data(member);
-		if (list_ins_next(setu, list_tail(setu), data) != 0) {
-			set_destroy(setu);
-			return -1;
+			data = list_data(member);
+			if (list_ins_next(setu, list_tail(setu), data) != 0) {
+				set_destroy(setu);
+				return -1;
+			}
 		}
 	}
 
