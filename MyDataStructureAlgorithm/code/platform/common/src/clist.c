@@ -1,7 +1,7 @@
 /*
  * clist.c
  *
- *  Created on: 2015Äê2ÔÂ25ÈÕ
+ *  Created on: 2015ï¿½ï¿½2ï¿½ï¿½25ï¿½ï¿½
  *      Author: ZJ
  */
 
@@ -65,7 +65,7 @@ int clist_rem_next(CList *list, CListElmt *element, void **data) {
 	CListElmt *old_element;
 
 	/* Do not allow removal from an empty list. */
-	if (Clist_size(list) == 0)
+	if (clist_size(list) == 0)
 		return -1;
 
 	/* Remove the element from the list. */
