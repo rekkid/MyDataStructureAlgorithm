@@ -36,7 +36,8 @@ NONUT_DIRS = \
     $(ROOT)/code/application/cpurate \
 	$(ROOT)/code/application/list \
 	$(ROOT)/code/application/dlist \
-	$(ROOT)/code/application/clist
+	$(ROOT)/code/application/clist \
+	$(ROOT)/code/application/chtbl
     
 UT_DIRS = \
     $(ROOT)/tests/platform/common \
