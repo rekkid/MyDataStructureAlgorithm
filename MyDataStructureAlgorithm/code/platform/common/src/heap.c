@@ -52,7 +52,7 @@ int heap_insert(Heap *heap, const void *data) {
 	int ipos, ppos;
 
 	/* Allocate storage for the node. */
-	if ((temp = (void **)relloc(heap->tree, (heap_size(heap) + 1) * sizeof(void *))) == NULL) {
+	if ((temp = (void **)realloc(heap->tree, (heap_size(heap) + 1) * sizeof(void *))) == NULL) {
 		return -1;
 	} else {
 		heap->tree = temp;
@@ -61,7 +61,7 @@ int heap_insert(Heap *heap, const void *data) {
 	/* Insert the node after the last node. */
 	heap->tree[heap_size(heap)] = (void *)data;
 
-	/* Heapify the tree by pushing the contents of the new node upword. */
+	/* Heapify the tree by pushing the contents of the new node upward. */
 	ipos = heap_size(heap);
 	ppos = heap_parent(ipos);
 
@@ -70,6 +70,9 @@ int heap_insert(Heap *heap, const void *data) {
 		temp = heap->tree[ppos];
 		heap->tree[ppos] = heap->tree[ipos];
 		heap->tree[ipos] = temp;
+
+		ipos = ppos;
+		ppos = heap_parent(ipos);
 	}
 
 	/* Adjust the size of the heap to account for teh inserted node. */
@@ -94,7 +97,7 @@ int heap_extract(Heap *heap, void **data) {
 	save = heap->tree[heap_size(heap) - 1];
 
 	if (heap_size(heap) - 1 > 0) {
-		if ((temp = (void **)relloc(heap->tree, (heap_size(heap) - 1) * sizeof(void *))) == NULL) {
+		if ((temp = (void **)realloc(heap->tree, (heap_size(heap) - 1) * sizeof(void *))) == NULL) {
 			return -1;
 		} else {
 			heap->tree = temp;
