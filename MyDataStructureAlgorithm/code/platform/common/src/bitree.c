@@ -75,7 +75,7 @@ int bitree_ins_right(BiTree *tree, BiTreeNode *node, const void *data) {
 		position = &tree->root;
 	} else {
 		/* Normally allow insertion only at the end of a branch. */
-		if (bitree_right(node) == NULL)
+		if (bitree_right(node) != NULL)
 			return -1;
 
 		position = &node->right;
