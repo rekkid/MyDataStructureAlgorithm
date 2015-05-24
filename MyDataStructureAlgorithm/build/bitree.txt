@@ -1,0 +1,65 @@
+Inserting some nodes
+Tree size is 10
+(Preorder traversal)
+Node=020
+Node=010
+Node=005
+Node=015
+Node=030
+Node=025
+Node=023
+Node=026
+Node=070
+Node=080
+Found 030...Removing the left tree below it
+Tree size is 7
+(Preorder traversal)
+Node=020
+Node=010
+Node=005
+Node=015
+Node=030
+Node=070
+Node=080
+Could not find 099
+Found 020...Removing the right tree below it
+Tree size is 4
+(Preorder traversal)
+Node=020
+Node=010
+Node=005
+Node=015
+Testing bitree_is_leaf...Value=0 (0=OK)
+Testing bitree_is_leaf...Value=0 (0=OK)
+Testing bitree_is_leaf...Value=1 (1=OK)
+Testing bitree_is_leaf...Value=1 (1=OK)
+Inserting some nodes
+Tree size is 8
+(Preorder traversal)
+Node=020
+Node=010
+Node=005
+Node=015
+Node=011
+Node=055
+Node=044
+Node=077
+(Inorder traversal)
+Node=005
+Node=010
+Node=011
+Node=015
+Node=020
+Node=044
+Node=055
+Node=077
+(Postorder traversal)
+Node=005
+Node=011
+Node=015
+Node=010
+Node=044
+Node=077
+Node=055
+Node=020
+Destroying the tree
