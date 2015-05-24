@@ -11,7 +11,7 @@
 #include "heap.h"
 
 /* Implement priority queues as heaps. */
-#define Heap PQueue;
+typedef Heap PQueue;
 
 /* Public Interface */
 #define pqueue_init heap_init
