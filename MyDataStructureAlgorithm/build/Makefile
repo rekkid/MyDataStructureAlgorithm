@@ -40,7 +40,10 @@ NONUT_DIRS = \
 	$(ROOT)/code/application/chtbl \
 	$(ROOT)/code/application/bitree \
 	$(ROOT)/code/application/heap \
-	$(ROOT)/code/application/pqueue
+	$(ROOT)/code/application/pqueue \
+	$(ROOT)/code/application/graph \
+	$(ROOT)/code/application/graph_bfs \
+	$(ROOT)/code/application/graph_dfs
     
 UT_DIRS = \
     $(ROOT)/tests/platform/common \
