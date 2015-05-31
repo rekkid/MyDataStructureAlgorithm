@@ -64,7 +64,7 @@ int graph_ins_vertex(Graph *graph, const void *data) {
 		return -1;
 
 	adjlist->vertex = (void *)data;
-	set_init(&adjlist->adjacent, graph->match, NULL);
+	set_init(&adjlist->adjacent, graph->match, graph->destroy);
 
 	if ((retval = list_ins_next(&graph->adjlists, list_tail(&graph->adjlists), adjlist)) != 0) {
 		return retval;
@@ -80,7 +80,7 @@ int graph_ins_edge(Graph *graph, const void *data1, const void *data2) {
 	ListElmt *element;
 	int retval;
 
-	/* Don not allow insertion of an edge without bouth its vertices in the graph. */
+	/* Don not allow insertion of an edge without both its vertices in the graph. */
 	for (element = list_head(&graph->adjlists); element != NULL;
 		 element = list_next(element)) {
 		if (graph->match(data2, ((AdjList *)list_data(element))->vertex))
@@ -142,6 +142,10 @@ int graph_rem_vertex(Graph *graph, void **data) {
 
 	/* Do not allow removal of the vertex if its adjacency list is not empty. */
 	if (set_size(&((AdjList *)list_data(temp))->adjacent) > 0)
+		return -1;
+
+	/* Remove the vertex. */
+	if (list_rem_next(&graph->adjlists, prev, (void **)&adjlist) != 0)
 		return -1;
 
 	/* Free the storage allocated by the abstract datatype. */

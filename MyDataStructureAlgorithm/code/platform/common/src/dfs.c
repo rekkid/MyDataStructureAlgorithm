@@ -30,7 +30,7 @@ static int dfs_main(Graph *graph, AdjList *adjlist, List *ordered) {
 
 		/* Move one vertex deeper when the next adjacent vertex is white. */
 		if (clr_vertex->color == white) {
-			if (def_main(graph, clr_adjlist, ordered) != 0)
+			if (dfs_main(graph, clr_adjlist, ordered) != 0)
 				return -1;
 		}
 	}
