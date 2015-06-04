@@ -43,7 +43,8 @@ NONUT_DIRS = \
 	$(ROOT)/code/application/pqueue \
 	$(ROOT)/code/application/graph \
 	$(ROOT)/code/application/graph_bfs \
-	$(ROOT)/code/application/graph_dfs
+	$(ROOT)/code/application/graph_dfs \
+	$(ROOT)/code/application/graphalg_span
     
 UT_DIRS = \
     $(ROOT)/tests/platform/common \
