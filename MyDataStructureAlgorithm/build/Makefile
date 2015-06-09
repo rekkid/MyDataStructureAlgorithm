@@ -44,7 +44,8 @@ NONUT_DIRS = \
 	$(ROOT)/code/application/graph \
 	$(ROOT)/code/application/graph_bfs \
 	$(ROOT)/code/application/graph_dfs \
-	$(ROOT)/code/application/graphalg_span
+	$(ROOT)/code/application/graphalg_span\
+	$(ROOT)/code/application/sort 
     
 UT_DIRS = \
     $(ROOT)/tests/platform/common \

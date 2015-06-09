@@ -23,7 +23,7 @@ static int merge(void *data, int esize, int i, int j, int k, int (*compare)
 	mpos = 0;
 
 	/* Allocate storage for the merged elements. */
-	if ((m = (char *)malloc(esize * ((k = i) + 1))) == NULL)
+	if ((m = (char *)malloc(esize * ((k - i) + 1))) == NULL)
 		return -1;
 
 	/* Continue while either division has elements to merge. */
